@@ -1,26 +1,29 @@
-.sidebar-icon {
-    width: 25px;
-}
-
 /* For Side Item Active */
-.nav-item a .active-icon {
-    display: none;
-}
-
 .side-item-active {
     background-color: #161365;
     border-radius: 5px;
-    color: white;
 }
 
 .side-item-active a {
     color: white;
 }
 
-.side-item-active a .inactive-icon {
-    display: none;
+.side-item-active .side-icon {
+    color: #053EFF;
 }
 
-.side-item-active a .active-icon {
-    display: initial;
+/* For Side Item Hover */
+.nav-item:hover {
+    background-color: #161365;
+    border-radius: 5px;
 }
+
+.nav-item:hover .dark-silver-text {
+    color: white;
+}
+
+.nav-item:hover .side-icon {
+    color: #053EFF;
+}
+
+

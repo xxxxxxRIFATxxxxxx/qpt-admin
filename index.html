@@ -17,6 +17,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e422e8ad98.js" crossorigin="anonymous"></script>
+
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/sidebar.css">
@@ -31,7 +34,7 @@
         <div class="dashboard">
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
                 <!-- Side Bar -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                     <div class="card h-100 bg-transparent border-0">
                         <!-- Logo -->
                         <h1 class="fs-3 fst-italic text-center">
@@ -41,16 +44,83 @@
                         <!-- Items -->
                         <div class="mt-5">
                             <ul class="nav flex-column">
-                                <li class="nav-item p-1 side-item-active">
+                                <!-- Admin Overview -->
+                                <li class="nav-item p-1 side-item-active mb-3">
                                     <a href="index.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-center align-items-center side-bar-icon">
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
 
-                                        <img class="img-fluid me-3 sidebar-icon inactive-icon"
-                                            src="images/icons/admin-overview-icon.svg" alt="admin overview">
-
-                                        <img class="img-fluid me-3 sidebar-icon active-icon"
-                                            src="images/icons/admin-overview-icon-active.svg" alt="admin overview">
+                                        <i class="fas fa-chart-pie dark-silver-text fs-5 side-icon me-4"></i>
                                         <span>Admin Overview</span>
+                                    </a>
+                                </li>
+
+                                <!-- User Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="user-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-user-friends dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>User Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Deposit Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="deposit-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-wallet dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Deposit Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Withdraw Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="withdraw-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-money-bill-wave dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Withdraw Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Finance Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="finance-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-database dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Finance Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Profile & Security -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="profile-security.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-user-lock dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Profile & Security</span>
+                                    </a>
+                                </li>
+
+                                <!-- Quote Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="quote-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-quote-left dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Quote Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Beneficiary Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="beneficiary-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-users dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Beneficiary Management</span>
                                     </a>
                                 </li>
                             </ul>
@@ -59,7 +129,7 @@
                 </div>
 
                 <!-- Content -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-10">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                     <div class="card h-100 bg-transparent">
                         Content
                     </div>
