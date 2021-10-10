@@ -19,14 +19,54 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 
-<body>
+<body class="dark-blue-bg text-white">
     <!-- Header -->
     <header></header>
 
     <!-- Main -->
-    <main></main>
+    <main>
+        <div class="dashboard">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
+                <!-- Side Bar -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-2">
+                    <div class="card h-100 bg-transparent border-0">
+                        <!-- Logo -->
+                        <h1 class="fs-3 fst-italic text-center">
+                            <span class="blue-text">Qp</span>tradings
+                        </h1>
+
+                        <!-- Items -->
+                        <div class="mt-5">
+                            <ul class="nav flex-column">
+                                <li class="nav-item p-1 side-item-active">
+                                    <a href="index.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-center align-items-center side-bar-icon">
+
+                                        <img class="img-fluid me-3 sidebar-icon inactive-icon"
+                                            src="images/icons/admin-overview-icon.svg" alt="admin overview">
+
+                                        <img class="img-fluid me-3 sidebar-icon active-icon"
+                                            src="images/icons/admin-overview-icon-active.svg" alt="admin overview">
+                                        <span>Admin Overview</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-10">
+                    <div class="card h-100 bg-transparent">
+                        Content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer></footer>
