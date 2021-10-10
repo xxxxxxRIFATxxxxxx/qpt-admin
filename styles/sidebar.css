@@ -32,9 +32,12 @@
     padding-right: 20px;
 }
 
+.dropdown-item {
+    cursor: pointer;
+}
+
 /* For Logout Button */
 .logout-btn {
     padding-left: 20px;
     padding-right: 20px;
 }
-

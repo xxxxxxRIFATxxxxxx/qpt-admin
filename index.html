@@ -27,12 +27,11 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/admin-overview.css">
 </head>
 
 <body class="dark-blue-bg text-white">
-    <!-- Header -->
-    <header></header>
-
     <!-- Main -->
     <main>
         <div class="dashboard">
@@ -143,10 +142,10 @@
                             </button>
                             <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <div class="dropdown-item">
                                         <span class="flag-icon flag-icon-us"></span>
                                         English
-                                    </a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -162,16 +161,118 @@
 
                 <!-- Content -->
                 <div class="col-12 col-sm-12 col-md-12 col-lg-9">
-                    <div class="card h-100 bg-transparent">
-                        Content
+                    <div class="card h-100 bg-transparent border-0">
+                        <!-- Header -->
+                        <div>
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-0 mb-4">
+                                <div class="container-fluid px-0">
+                                    <!-- Mode -->
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <i class="fas fa-sun dark-silver-text me-2"></i>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                                checked />
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">
+                                                <i class="fas fa-moon"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <!-- User -->
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <!-- User For Desktop View -->
+                                        <div
+                                            class="user-desktop-view d-flex justify-content-start align-items-center ms-auto">
+                                            <!-- Search -->
+                                            <button class="search-click-btn btn me-0">
+                                                <input type="text"
+                                                    class="search-click bg-transparent border-0 text-white" name=""
+                                                    placeholder="Search" />
+                                                <i class="fas fa-search blue-text me-1"></i>
+                                            </button>
+
+                                            <a href="#" class="text-decoration-none text-white">
+                                                <i class="fas fa-bell position-relative blue-text me-4">
+                                                    <span
+                                                        class="position-absolute top-0 start-100 translate-middle rounded-circle yellow-bg notification-badge">
+                                                        <span class="visually-hidden">New alerts</span>
+                                                    </span>
+                                                </i>
+                                            </a>
+
+                                            <a href="#" class="text-decoration-none text-white">
+                                                <h6 class="me-4">
+                                                    <span class="blue-text">Hello,</span>
+                                                    <span>Cristiano</span>
+                                                </h6>
+                                            </a>
+
+                                            <a href="#" class="text-decoration-none text-white">
+                                                <img src="images/profile-picture.jpg" class="img-fluid profile-picture"
+                                                    alt="profile picture">
+                                            </a>
+                                        </div>
+
+                                        <!-- User For Mobile And Tablet View -->
+                                        <ul class="user-mobile-tablet-view navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+                                            <li class="nav-item">
+                                                <div class="nav-link">
+                                                    <input class="form-control text-center" type="text"
+                                                        placeholder="Search">
+                                                </div>
+                                            </li>
+
+                                            <li class="nav-item text-center">
+                                                <a href="#" class="nav-link text-decoration-none text-white">
+                                                    <i class="fas fa-bell position-relative blue-text">
+                                                        <span
+                                                            class="position-absolute top-0 start-100 translate-middle rounded-circle yellow-bg notification-badge">
+                                                            <span class="visually-hidden">New alerts</span>
+                                                        </span>
+                                                    </i>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item text-center">
+                                                <a href="#" class="nav-link text-decoration-none text-white">
+                                                    <h6 class="">
+                                                        <span class="blue-text">Hello,</span>
+                                                        <span>Cristiano</span>
+                                                    </h6>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item text-center">
+                                                <a href="#" class="nav-link text-decoration-none text-white">
+                                                    <img src="images/profile-picture.jpg"
+                                                        class="img-fluid profile-picture" alt="profile picture">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="mb-4">
+                                <h4>Dashboard</h4>
+                                <p class="silver-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                                    rem!</p>
+                            </div>
+                        </div>
+
+                        <!-- Admin Overview Content -->
+                        <div></div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer></footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
