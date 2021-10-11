@@ -11,6 +11,10 @@
     background-color: #161365;
 }
 
+.more-light-blue-bg {
+    background-color: #1d1a85;
+}
+
 .blue-bg {
     background-color: #053EFF;
 }
@@ -44,10 +48,28 @@
     color: #FF1414;
 }
 
+.dark-red-text {
+    color: #d11010;
+}
+
 .yellow-text {
     color: #F3AB02;
 }
 
 .dark-silver-text {
     color: #454391;
+}
+
+/* Text Size */
+.small-text {
+    font-size: 12px;
+}
+
+.super-text {
+    font-size: 8px;
+}
+
+/* Border Radius */
+.square-radius {
+    border-radius: 5px;
 }
