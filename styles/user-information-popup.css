@@ -1,0 +1,40 @@
+/* Responsive Modal */
+@media only screen and (max-width: 414px) {
+    .modal-header {
+        text-align: center;
+    }
+
+    .modal .btn-close {
+        margin-top: 0;
+    }
+
+    .modal-body {
+        text-align: center;
+    }
+
+    .modal-body .text-end {
+        text-align: center !important;
+    }
+
+    .p-sm {
+        margin-bottom: 50px !important;
+    }
+
+    .sm-center {
+        text-align: center;
+    }
+
+    .margin-sm-right {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    .text-right {
+        text-align: end;
+    }
+
+    .sm-center {
+        text-align: start;
+    }
+}

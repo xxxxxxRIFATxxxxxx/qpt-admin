@@ -65,6 +65,10 @@
     font-size: 12px;
 }
 
+.more-small-text {
+    font-size: 10px;
+}
+
 .super-text {
     font-size: 8px;
 }
@@ -72,4 +76,31 @@
 /* Border Radius */
 .square-radius {
     border-radius: 5px;
+}
+
+.more-square-radius {
+    border-radius: 15px;
+}
+
+.small-radius {
+    border-radius: 2px;
+}
+
+/* Modal */
+.modal .btn-close {
+    background: url("../images/cross-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+
+.blue-border-bottom {
+    border-bottom: 1px solid #053EFF;
+}
+
+.modal .btn-close:focus, .modal .modal-body .btn:focus {
+    box-shadow: none;
+}
+
+.profile-picture-modal {
+    width: 70px;
 }
