@@ -27,6 +27,10 @@
     .margin-sm-right {
         margin-right: 30px;
     }
+
+    .edit-input {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 415px) and (max-width: 768px) {
