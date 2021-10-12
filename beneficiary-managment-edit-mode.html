@@ -31,7 +31,7 @@
         <div class="text-center">
             <!-- Button Deposit Modal -->
             <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#depositModal">
-                Profile And Security View
+                Deposit Management Edit Mode
             </button>
         </div>
 
@@ -44,7 +44,7 @@
                         class="modal-header px-0 d-flex flex-column flex-sm-row align-items-center justify-content-between blue-border-bottom pb-2">
                         <div>
                             <h5 class="modal-title fs-5">
-                                SERGIO RAMOS
+                                Sergio Ramos
                             </h5>
                         </div>
 
@@ -58,77 +58,65 @@
 
                     <!-- Modal Body -->
                     <div class="modal-body px-0 pb-2">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                             <div class="col">
-                                <small class="silver-text more-small-text fst-italic">EMAILS</small>
-                                <p class="fs-6">sergio.ramos@gmx.de</p>
-                            </div>
-
-                            <div class="col text-right">
-                                <small class="silver-text more-small-text fst-italic">
-                                    PLAN
-                                </small>
+                                <small class="silver-text more-small-text fst-italic">RETIREE NAME</small>
                                 <div class="input-group mb-3">
-                                    <input type="text"
-                                        class="form-control fs-6 bg-transparent text-white border-0 px-0 edit-input"
-                                        value="Cash Balance" disabled>
-                                    <button class="btn input-group-text bg-transparent border-0 edit-btn">
-                                        <i class="fas fa-pen blue-text"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <small class="silver-text more-small-text fst-italic">
-                                    DATE OF BIRTH
-                                </small>
-                                <div class="input-group mb-3">
-                                    <input type="text"
-                                        class="form-control fs-6 bg-transparent text-white border-0 px-0 edit-input"
-                                        value="08/15/1976" disabled>
-                                    <button class="btn input-group-text bg-transparent border-0 edit-btn">
-                                        <i class="fas fa-pen blue-text"></i>
-                                    </button>
+                                    <input type="text" class="form-control fs-6 dark-blue-bg text-white border-0"
+                                        value="James Cameron">
                                 </div>
                             </div>
 
                             <div class="col text-right">
-                                <small class="silver-text more-small-text fst-italic">
-                                    PHONE NUMBER
-                                </small>
+                                <small class="silver-text more-small-text fst-italic">BENEFICARY NAME</small>
                                 <div class="input-group mb-3">
-                                    <input type="text"
-                                        class="form-control fs-6 bg-transparent text-white border-0 px-0 edit-input"
-                                        value="2334552307" disabled>
-                                    <button class="btn input-group-text bg-transparent border-0 edit-btn">
-                                        <i class="fas fa-pen blue-text"></i>
-                                    </button>
+                                    <input type="text" class="form-control fs-6 dark-blue-bg text-white border-0"
+                                        value="Michele Hookbar">
                                 </div>
                             </div>
 
                             <div class="col">
                                 <small class="silver-text more-small-text fst-italic">
-                                    OLD PASSWORD
+                                    RELATION WITH BENEFACTOR
                                 </small>
+                                <select class="form-select dark-blue-bg border-0 text-white">
+                                    <option selected>Son</option>
+                                    <option value="Brother">Brother</option>
+                                    <option value="Husband">Husband</option>
+                                    <option value="Wife">Wife</option>
+                                </select>
+                            </div>
+
+                            <div class="col text-right">
+                                <small class="silver-text more-small-text fst-italic">BENEFICARY NUMBER</small>
                                 <div class="input-group mb-3">
-                                    <input type="text"
-                                        class="form-control fs-6 bg-transparent text-white border-0 px-0 edit-input"
-                                        value="Amstar771@" disabled>
-                                    <button class="btn input-group-text bg-transparent border-0 edit-btn">
-                                        <i class="fas fa-pen blue-text"></i>
-                                    </button>
+                                    <input type="text" class="form-control fs-6 dark-blue-bg text-white border-0"
+                                        value="+1125 125 1235">
                                 </div>
                             </div>
-                        </div>
 
+                            <div class="col">
+                                <small class="silver-text more-small-text fst-italic">
+                                    BENEFICARY PERCENTAGE (%)
+                                </small>
+                                <input type="range" class="form-range text-danger" id="benificary-percentage" value="0">
+                            </div>
 
-                        <!-- Modal Footer -->
-                        <div class="modal-footer border-0 px-0 d-flex justify-content-center justify-content-md-end">
-                            <button type="button"
-                                class="btn btn-success green-bg border-0 small-text btn-lg small-radius">
-                                Save Change
-                            </button>
+                            <div class="col">
+                                <small class="silver-text more-small-text fst-italic hide">
+                                    BENEFICARY PERCENTAGE VALUE
+                                </small>
+                                <input type="text" class="form-control fs-6 dark-blue-bg text-white border-0" value="60"
+                                    id="benificary-percentage-value">
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer border-0 px-0 d-flex justify-content-center justify-content-md-end">
+                        <button type="button" class="btn btn-success green-bg border-0 small-text btn-lg small-radius">
+                            Save Change
+                        </button>
                     </div>
                 </div>
             </div>

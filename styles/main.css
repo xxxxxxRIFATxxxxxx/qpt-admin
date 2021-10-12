@@ -117,3 +117,8 @@ input[type="date"]:focus {
 input[type="text"]:focus {
     background-color: transparent;
 }
+
+/* For Hide Element */
+.hide {
+    visibility: hidden;
+}

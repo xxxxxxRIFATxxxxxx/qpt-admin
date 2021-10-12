@@ -1,3 +1,4 @@
+// For Edit Button
 const editBtnList = document.getElementsByClassName("edit-btn");
 
 for (editBtn of editBtnList) {
@@ -12,3 +13,11 @@ for (editBtn of editBtnList) {
         inputElement2.focus();
     });
 }
+
+// For Beneficary Percentage
+const beneficaryInput = document.getElementById("benificary-percentage");
+const beneficaryValue = document.getElementById("benificary-percentage-value");
+
+beneficaryInput.addEventListener("change", () => {
+    beneficaryValue.value = beneficaryInput.value;
+});
