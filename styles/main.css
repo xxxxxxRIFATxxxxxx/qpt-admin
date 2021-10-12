@@ -104,3 +104,16 @@
 .profile-picture-modal {
     width: 70px;
 }
+
+/* For Date Field */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url("../images/calender.svg") no-repeat;
+}
+
+input[type="date"]:focus {
+    background-color: transparent;
+}
+
+input[type="text"]:focus {
+    background-color: transparent;
+}
